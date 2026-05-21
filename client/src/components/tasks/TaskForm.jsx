@@ -82,7 +82,7 @@ export default function TaskForm({ onSubmit, onCancel, teamMembers, projects }) 
         </div>
         <div className="form-group">
           <label>Estimated Hours</label>
-          <input type="number" value={estimatedHours} onChange={(e) => setEstimatedHours(e.target.value)} min="0" step="0.5" />
+          <input type="number" value={estimatedHours} onChange={(e) => setEstimatedHours(e.target.value)} placeholder="e.g. 2.5" min="0" step="0.5" />
         </div>
       </div>
       <div style={{ display: 'flex', gap: 'var(--space-2)', justifyContent: 'flex-end', marginTop: 'var(--space-4)' }}>
